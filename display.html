@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {color: red;}
+
+p.ex1 {display: none; }
+p.ex2 {display: inline; height: fit-content; width: min-content;}
+p.ex3 {display: block; height: fit-content; width: 600px;}
+p.ex4 {display: inline-block;}
+</style>
+</head>
+<body>
+<h1>The display Property</h1>
+
+<h2>display: none:</h2>
+<div style="background-color: aqua;">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at
+ pulvinar felis blandit. <p class="ex1">HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+</div>
+
+<h2>display: inline:</h2>
+<div style="background-color: aquamarine;">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at
+ pulvinar felis blandit. <p class="ex2">HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+</div>
+
+<h2>display: block:</h2>
+<div style="background-color: rgb(1, 47, 47);">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at
+ pulvinar felis blandit. <p class="ex3">HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+</div>
+
+<h2>display: inline-block:</h2>
+<div style="background-color: rgb(48, 84, 84);">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at 
+pulvinar felis blandit. <p class="ex4">HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!-- /* precomposed values */
+display: block;
+display: inline;
+display: inline-block;
+display: flex;
+display: inline-flex;
+display: grid;
+display: inline-grid;
+display: flow-root;
+
+/* box generation */
+display: none;
+display: contents;
+
+/* multi-keyword syntax */
+display: block flow;
+display: inline flow;
+display: inline flow-root;
+display: block flex;
+display: inline flex;
+display: block grid;
+display: inline grid;
+display: block flow-root;
+
+/* other values */
+display: table;
+display: table-row; /* all table elements have an equivalent CSS display value */
+display: list-item;
+
+/* Global values */
+display: inherit;
+display: initial;
+display: revert;
+display: revert-layer;
+display: unset; -->
