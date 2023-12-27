@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=|, initial-scale=1.0">
+    <title>E! 3</title>
+</head>
+<body>
+    <h4>
+        The <table> tag defines an HTML table.
+            An HTML table consists of one <table> element and one or more <tr>, <th>, and <td> elements.
+            The <tr> element defines a table row, the <th> element defines a table header, and the <td> element defines a table cell.
+            An HTML table may also include <caption>, <colgroup>, <thead>, <tfoot>, and <tbody> elements.
+    </h4> 
+     <div>
+        <table border="2" cellpadding="7">
+            <tr>
+              <th>Month</th>
+              <th>Savings</th>
+            </tr>
+            <tr>
+              <td>January</td>
+              <td>$100</td>
+            </tr>
+          </table>
+    </div>
+
+    <br>
+
+<!-- 
+    for multiple rows 
+    <table border="2" cellspacing="4" align="right">
+        <tr>
+          <th>Emp no</th>
+          <th>Name</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Virat Kholi</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Rohit sharma</td>
+        </tr>
+      </table> -->
+
+ <!-- table with three rows, two header cells and four data cells:
+            <table border="2" > 
+              <tr>
+                <th>Match</th>
+                <th colspan="2">country</th>
+              </tr>
+              <tr>
+                <td >01</td>
+                <td>Ind VS Pak</td>
+                <td>Aus VS Eng</td>
+              </tr>
+              <tr >
+                <td>02</td>
+                <td >Aus VS SA</td>
+              </tr>
+            </table> -->
+
+   
+
+    <br>
+    <br>
+
+<table border="3">
+  <tr>
+    <th >Name</th>
+    <th colspan="2">email</th>
+  </tr>
+  <tr>
+    <td rowspan="2">A</td>
+    <td>B</td>
+    <!-- <td rowspan="3">C</td>
+    <td rowspan="2">D</td> -->
+  </tr>
+  <tr>
+    <td>B</td>
+    <td rowspan="2">F</td>
+    <!-- <td rowspan="4">H</td>
+    <td rowspan=3>J</td> -->
+  </tr>
+</table>
+
+<br>
+<br>
+
+  <div>
+    A table with a caption:
+    <table border="2">
+        <caption>Monthly savings</caption>
+        <tr>
+            <th>Month</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>$100</td>
+        </tr>
+    </table>
+</div>
+
+
+<br><br>
+      <div>
+       For setting the background color of the three columns with the <colgroup> and <col> tags:
+
+            <table>
+              <colgroup>
+                <col span="2" style="background-color:red">
+                <col style="background-color:yellow">
+              </colgroup>
+              <tr>
+                <th>Order no</th>
+                <th>Cloth</th>
+                <th>Price</th>
+              </tr>
+              <tr>
+                <td>2648768</td>
+                <td>Shirt</td>
+                <td>$53</td>
+              </tr>
+            </table>
+      </div>
+
+      <br>
+    <!-- <div>
+        <table>
+            table with a thead, tbody, and a tfoot element:
+            <thead>
+              <tr>
+                <th>Cloth</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Dress</td>
+                <td>$100</td>
+              </tr>
+              <tr>
+                <td>Shirt</td>
+                <td>$80</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td>Denim Jacket</td>
+                <td>$180</td>
+              </tr>
+            </tfoot>
+          </table>
+    
+    </div> -->
+
+</body>
+</html>

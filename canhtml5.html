@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e! 5</title>
+</head>
+<body>
+
+    <!-- <p><i><b>The example for Triangle</b></i></p>
+   <canvas id="canvas" width="100px" height="100px" style="border: 1px solid rgb(79, 79, 3);"></canvas>
+   <script> 
+   var canvas = document.getElementById("canvas");
+   var context = canvas.getContext("2d");
+   context.strokeStyle ="blue";
+    context.beginPath()
+     context.moveTo(75, 25)
+     context.lineTo(100, 75)
+     context.lineTo(100, 25)
+     context.lineTo(75, 25)
+     context.stroke()
+     context.closePath()</script> 
+   
+   <p> 
+       *moveTO(75,25) sets the pen at x,y = (75,25)
+       *lineTo(100,75) marks a line from x,y=(75,25) to x,y(100,75)
+       *lineTo(100,25) marks a line from gthe previous endpoint, x,y= (100,25)
+       *lineTo(75,25) marks a line from x,y = 100,25 to (x,y)(72,25) . this marks the right angle.
+       Finally,stroke() cretaes the outline
+     </p> -->
+
+    <!-- <canvas id="myCanvas" width="300" height="200" style="border:2px solid;">  
+        Your browser does not support the HTML5 canvas tag.</canvas>  
+        <p>A canvas is a two dimensional grid.
+            Coordinates (0,0) defines the upper left corner of the canvas.
+             The parameters (0,0,200,100) is used for fillRect() method. This parameter will fill the rectangle start with the upper-left corner (0,0) and draw a 200 * 100 rectangle.</p>
+        <script>  
+            var c = document.getElementById("myCanvas");  
+            var ctx = c.getContext("2d");  
+            ctx.fillStyle = "#FF0000";  
+            ctx.fillRect(0,0,200,100);  
+            </script>  
+<br> -->
+
+<!-- <h3>If you want to draw a straight line on the canvas, you can use the following two methods.</h3>
+<p>*  moveTo(x,y): It is used to define the starting point of the line.
+   *  lineTo(x,y): It is used to define the ending point of the line.
+    <br>
+    If you draw a line which starting point is (0,0) and the end point is (200,100), use the stroke
+     method to draw the line.</p>
+
+     <canvas id="myCanvasLine" width="200" height="100" style="border:1px solid #d3d3d3;">  
+        Your browser does not support the HTML5 canvas tag.</canvas>  
+        <script>  
+        var c = document.getElementById("myCanvasLine");  
+        var ctx = c.getContext("2d");  
+        ctx.moveTo(0,0);  
+        ctx.lineTo(200,100);  
+        ctx.stroke();  
+        </script>   -->
+
+<br>
+<h3>If you want to draw a circle on the canvas, you can use the arc() method:</h3>
+<h2 style="color: green;">arc(x, y, r, start, stop)</h2>
+<p>To sketch circle on HTML canvas, use one of the ink() methods, like stroke() or fill().</p>
+
+<canvas id="myCanvasCircle" width="200" height="100" style="border:1px solid #d3d3d3;">  
+Your browser does not support the HTML5 canvas tag.</canvas>  
+<script>  
+var c = document.getElementById("myCanvasCircle");  
+var ctx = c.getContext("2d");  
+ctx.beginPath();  
+ctx.arc(95,50,40,0,2*Math.PI);  
+ctx.stroke();  
+</script>  
+
+<!-- <br>
+<h3>There are property and methods used for drawing text on the canvas.</h3>
+<p>
+*font property: It is used to define the font property for the text.<br>
+*fillText(text,x,y) method: It is used to draw filled text on the canvas. It looks like bold font.<br>
+*strokeText(text,x,y) method: It is also used to draw text on the canvas, but the text is unfilled.<br>
+</p>
+
+<h2 style="font-family: serif;">fillText() method example.</h2>
+<canvas id="myCanvasText1" width="300" height="100" style="border:1px solid #d3d3d3;">  
+    Sorry! Your browser does not support the HTML5 canvas tag.</canvas>  
+    <script>  
+    var c = document.getElementById("myCanvasText1");  
+    var ctx = c.getContext("2d");  
+    ctx.font=" 20px serif";
+    ctx.fillText("Welcome to edureka!",10,50);  
+    </script>  
+
+
+<h2>StrokeText() method example.</h2>
+<canvas id="myCanvasText2" width="500" height="100" style="border:1px solid #d3d3d3;">  
+ Sorry!Upgrade your browser. It does not support the HTML5 canvas tag.</canvas>  
+<script>  
+var c = document.getElementById("myCanvasText2");  
+var ctx = c.getContext("2d");  
+ctx.font = "30px Arial";  
+ctx.strokeText("Full stack web development",10,50);  
+</script>   -->
+
+
+
+</body>
+
+</html>
