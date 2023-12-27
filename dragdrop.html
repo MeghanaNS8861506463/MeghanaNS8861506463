@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and drop</title>
+<style>
+    #di1{
+        width: 245px;
+        height: 85px;
+        padding: 10px;
+        border: 1px solid #aaa;
+    }
+    
+</style>
+<script>
+    function allowDrop(ev) {
+        ev.preventDefault();
+    }
+
+    function drag(ev){
+        ev.dataTransfer.setData("text",ev.target.id);
+    }
+
+    function drop(ev){
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+    }
+</script>
+
+
+
+</head>
+<body>
+    <p>Drag google image into rectangle:</p>
+    <div id="di1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <br>
+    <img id="drag1" src="c1.png" draggable="true" ondragstart="drag(event)" width="220px" height="70">
+
+    <p>1) Make an element draggable
+        If you want to make an element draggable, set the draggable attribute to "true" on the element. For example:
+        <img draggable = "true">   
+        <br>
+        2) What to drag:
+        Use ondragstart and setData () methods.
+        Specify what should happen when the element is dragged.
+        <br>
+        3) Where to Drop:
+        Use ondragover event.
+        <br>
+        4) Do the Drop:
+        Use ondrop event.</p>
+<br>
+</body>
+</html>
